@@ -16,26 +16,41 @@ public class Url {
     private String url;
 
     @Column
+    private String shortUrl;
+
+    public String getShortUrl() {
+        return shortUrl;
+    }
+
+    public Url setShortUrl(String shortUrl) {
+        this.shortUrl = shortUrl;
+        return this;
+    }
+
+    @Column
     private LocalDate dateOfCreation;
 
     public String getUrl() {
         return url;
     }
 
-    public void setUrl(String url) {
+    public Url setUrl(String url) {
         this.url = url;
+        return this;
     }
 
     public LocalDate getDateOfCreation() {
         return dateOfCreation;
     }
 
-    public void setDateOfCreation(LocalDate dateOfCreation) {
+    public Url setDateOfCreation(LocalDate dateOfCreation) {
         this.dateOfCreation = dateOfCreation;
+        return this;
     }
 
-    public void setId(Long id) {
+    public Url setId(Long id) {
         this.id = id;
+        return this;
     }
 
     public Long getId() {

@@ -6,4 +6,6 @@ import ru.maxol.shortlink.entity.Url;
 
 @Repository
 public interface UrlRepository extends JpaRepository<Url, Long> {
+
+    Url findByShortUrl(String shortUrl);
 }
