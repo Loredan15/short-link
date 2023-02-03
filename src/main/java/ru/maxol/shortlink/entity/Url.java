@@ -17,6 +17,8 @@ public class Url {
 
     @Column
     private String shortUrl;
+    @Column
+    private LocalDate dateOfCreation;
 
     public String getShortUrl() {
         return shortUrl;
@@ -26,9 +28,6 @@ public class Url {
         this.shortUrl = shortUrl;
         return this;
     }
-
-    @Column
-    private LocalDate dateOfCreation;
 
     public String getUrl() {
         return url;
@@ -48,12 +47,12 @@ public class Url {
         return this;
     }
 
+    public Long getId() {
+        return id;
+    }
+
     public Url setId(Long id) {
         this.id = id;
         return this;
-    }
-
-    public Long getId() {
-        return id;
     }
 }
