@@ -1,7 +1,6 @@
 package ru.maxol.shortlink.entity;
 
-import jakarta.persistence.*;
-
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
